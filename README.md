@@ -1,6 +1,7 @@
 # Comp-7.5
 
 public static void main(String[] args) {
+	
 	Task task1 = new Task ("Do homework", 1);
         Task task2 = new Task ("Sleep", 2);
         
