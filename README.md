@@ -1,14 +1,33 @@
 # Comp-7.5
 
-public static void main(String[] args) {
-	Task task1 = new Task ("Do homework", 1);
-        Task task2 = new Task ("Sleep", 2);
-        
-        task1.setPriority(2);
-        task2.getPriority();
-        
-        System.out.println(task1);
-        System.out.println(task2);
-	}
 
- }
+public class Task implements Priority{
+	private String myTask;
+    private int myPriority;
+
+    public Task (String chore, int level) 
+    {
+        myTask = chore;
+        myPriority = level;
+    }
+
+    public void setPriority (int level)
+    {
+        myPriority = level;
+    }
+
+    public int getPriority()
+    {
+        return myPriority;
+    }
+
+    public String getTask()
+    {
+        return myTask;
+    }
+
+    public String toString()
+    {
+        return ("Task: " + myTask + "\nPriority: " + myPriority);
+    }
+}
