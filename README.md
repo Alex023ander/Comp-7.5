@@ -1,7 +1,7 @@
 # Comp-7.5
 
-
 public class Task implements Priority{
+	
 	private String myTask;
     private int myPriority;
 
